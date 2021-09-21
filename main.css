@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 1260px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -7,6 +7,7 @@
     height: 120px;
     position: relative;
     margin-bottom: 156px;
+    margin-top: 26px;
 }
 
 body {
@@ -65,19 +66,21 @@ body {
 
 .menu__link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .contacts {
     text-align: right;
-    right: 117px;
+    right: 0px;
 }
 
 .contacts__phone {
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 26px;
     line-height: 35px;
     color: #FFFFFF;
+    text-decoration: none;
 
 }
 
@@ -86,7 +89,6 @@ body {
     font-weight: normal;
     font-size: 13px;
     line-height: 20px;
-    display: flex;
     align-items: center;
     text-decoration-line: underline;
     text-align: right;
@@ -94,7 +96,7 @@ body {
 }
 
 .hello {
-    margin-bottom: 156px;
+    margin-bottom: 195px;
 }
 
 .hello__title {
@@ -118,13 +120,17 @@ body {
     padding: 18px 39px;
     border-radius: 35px;
     color: #FFFFFF;
-    font-weight: 700;
     text-transform: uppercase;
     line-height: 19px;
-    font-family: Open Sans;
     font-style: normal;
     text-decoration-line: none;
+    font-style: normal;
+font-size: 14px;
 
+}
+
+.offers {
+    margin-bottom: 181px;
 }
 
 .offers__list {
@@ -146,7 +152,7 @@ body {
     background: #FFFFFF;
     border-radius: 4px;
     display: inline-block;
-    margin-right: 28px;
+    margin-right: 10px;
     width: 362px;
 }
 
@@ -202,6 +208,11 @@ body {
     border-radius: 35px;
 }
 
+.title {
+    font-weight: bold;
+font-size: 36px;
+line-height: 49px;
+}
 
 .news {
     margin-bottom: 55px;
@@ -217,7 +228,6 @@ body {
 .news__img {
     border-radius: 5px;
     object-fit: cover;
-    opacity: 40%;
 }
 
 .news__list {
@@ -267,8 +277,7 @@ body {
     vertical-align: middle;
 }
 
-.pagination__info {
-}
+.pagination__info {}
 
 .pagination__item {
     display: inline-block;
@@ -279,42 +288,68 @@ body {
 .pagination__link {
     height: 32px;
     width: 32px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .about-us__content {
     position: absolute;
-    top: 100;
-    padding: 50;
+    top: -4px;
+    padding: 85px;
+    color: #060606;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.title--dark{
+color: #060606;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 49px;
 }
 
 .pagination__item--active {
     border-radius: 50%;
-    border: 1px solid red;
+    line-height: 31px;
+    background: #FFF;
 }
 
-.about-us__img2 {
-
+.pagination__link--active {
+    color: #F5170E;
+    text-decoration: none;
 }
+
+.about-us__img2 {}
+
 .about-us {
     position: relative;
     margin-bottom: 280px;
 }
 
-.about-us__container {position: absolute;top: 0;right: 121px;top: 146px;}
+.about-us__container {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    top: 146px;
+}
 
 .about-us__text p {
     margin-bottom: 50px;
 }
 
-.footer {position: relative;}
 
-.logo__footer {
-    
+.footer {
+    position: relative;
 }
+
+.logo__footer {}
 
 .logo__footer,
 .menu-footer,
-.menu-footer__item, 
+.menu-footer__item,
 .socials__item,
 .contacts-footer {
     display: inline-block;
@@ -331,6 +366,12 @@ body {
 
 .menu-footer__link {
     color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .contacts-footer {
@@ -347,6 +388,11 @@ body {
 
 .menu-footer__item {
     margin-right: 54;
+    color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 .menu-footer {
@@ -355,8 +401,7 @@ body {
     bottom: 1;
 }
 
-.socials__list
-.menu-footer__list {
+.socials__list .menu-footer__list {
     margin: 0;
     padding: 0;
 }
@@ -374,5 +419,23 @@ body {
 }
 
 .contacts-footer {
-    top: -23px;
+    top: -30px;
+}
+
+.contacts-footer__info {
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 32px;
+color: #9A9A9A;
+
+}
+
+.contacts-footer__phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
 }
