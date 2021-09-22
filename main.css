@@ -125,7 +125,7 @@ body {
     font-style: normal;
     text-decoration-line: none;
     font-style: normal;
-font-size: 14px;
+    font-size: 14px;
 
 }
 
@@ -210,8 +210,8 @@ font-size: 14px;
 
 .title {
     font-weight: bold;
-font-size: 36px;
-line-height: 49px;
+    font-size: 36px;
+    line-height: 49px;
 }
 
 .news {
@@ -290,6 +290,7 @@ line-height: 49px;
     width: 32px;
     color: #FFFFFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .about-us__content {
@@ -303,12 +304,12 @@ line-height: 49px;
     line-height: 27px;
 }
 
-.title--dark{
-color: #060606;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 49px;
+.title--dark {
+    color: #060606;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
 }
 
 .pagination__item--active {
@@ -320,6 +321,7 @@ line-height: 49px;
 .pagination__link--active {
     color: #F5170E;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .about-us__img2 {}
@@ -340,6 +342,10 @@ line-height: 49px;
     margin-bottom: 50px;
 }
 
+.line-img {
+    margin-bottom: 40px;
+    margin-left: -9px;
+}
 
 .footer {
     position: relative;
@@ -378,6 +384,7 @@ line-height: 49px;
     text-align: right;
     right: 0;
     position: absolute;
+    right: -11px;
 }
 
 .socials {
@@ -423,11 +430,11 @@ line-height: 49px;
 }
 
 .contacts-footer__info {
-font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 32px;
-color: #9A9A9A;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 32px;
+    color: #9A9A9A;
 
 }
 
