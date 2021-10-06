@@ -952,34 +952,48 @@ body {
     margin-top: 57px;
 }
 
-input:focus { 
-    outline: red !important;
-    border-color: #red;
-}
 
 .comment__name-one input {
     width: 557px;
     height: 65px;
-    border: 1px solid #f90000;
+    border: 1px solid transparent;
     border-radius: 5px;
     padding-left: 20px;
+    outline: none;
+    resize: none;
+}
+
+.comment__name-one :focus {
+border: 1px solid #F5170E;
+}
+
+.comment__name-two :focus {
+    border: 1px solid #F5170E;
+}
+
+.comment__name :focus {
+    border: 1px solid #F5170E;
 }
 
 .comment__name-two input {
     width: 557px;
     height: 65px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     padding-left: 20px;
+    outline: none;
+    resize: none;
 }
 
 .comment__name input {
     width: 1139px;
     height: 235px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     padding-bottom: 177px;
     padding-left: 20px;
+    outline: none;
+    resize: none;
 }
 
 .comment__text {
@@ -988,25 +1002,20 @@ input:focus {
 
 .comment__faq {
     color: #1A1B1E;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 25px;
     margin-right: 0px;
-    width: 532px;
+    width: 528px;
+    font-size: 18px;
 }
 
 .comment__footer {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
     margin-bottom: 32px;
     margin-top: 20;
     /* margin-left: 35px; */
-}
-
-.comment__button {
-    margin-left: 802px;
-    display: flex;
-    /* margin-top: 51px; */
-    /* margin-right: -3px; */
 }
 
 .reviews__button {
@@ -1021,10 +1030,6 @@ input:focus {
     margin: 3px;
 }
 
-.comment__tags {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .reviews__button--green {
     background: #B9EAE4;
@@ -1094,3 +1099,135 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
 }
+
+.form-reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-self: flex-end; */
+    /* justify-content: flex-end; */
+    /* margin: 0; */
+}
+
+.form-reviews__item {
+    margin-right: 7px;
+    margin-bottom: 9px;
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+.form-reviews__label {
+    background: #E7E7E7;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 15px;
+    color: #303030;
+    cursor: pointer;
+}
+
+.form-reviews__label-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.form-reviews__radio-button:checked + .form-reviews__label {
+    background: #B9EAE4;
+}
+
+.button__comment {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button__comment  {
+    border: transparent;
+}
+
+.button__comment--dark {
+    border: transparent;
+    background-color: #2B2B2B;
+    margin-right: 15px;
+    
+}
+
+   /* animation dropdown */
+.contacts__info-drop {
+    width: 156px;
+    height: 64px;
+    margin-left: 35px;
+    background: #EDEDED;
+    position: relative;
+    border-radius: 4px;
+    /* transform: rotate(90deg); */
+    margin-top: 20px;
+    opacity: 0.8;
+    padding: 1 2px 1px -1px;
+    }
+.contacts__info-drop:before {
+    content: "";
+    width: 9px;
+    height: 0;
+    position: absolute;
+    right: 100%;
+    top: calc(50% - 12px);
+    border-top: 28px solid transparent;
+    border-right: 20px solid #EDEDED;
+    border-bottom: 26px solid transparent;
+    transform: rotate(
+90deg);
+    top: -33px;
+    right: 31px;
+    opacity: 29.8;
+    }
+
+    .contacts__info-drop-day {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 21px;
+        color: #1E1F20;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts__info-drop-lunch {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 21px;
+        color: #1E1F20;
+        display: flex;
+        justify-content: center;
+        margin: -12px;
+    }
+
+    .contacts__info {
+        position: relative;
+        cursor:pointer;
+    }
+    
+    .contacts__info-drop{
+        display:none;
+        margin-left:-393px;
+        padding:7px;
+        margin-top:21px;
+        /* background:#f3f3f3; */
+        height:128px;
+        -moz-box-shadow:0 7px 7px rgba(25, 24, 24, 0.41);
+        -webkit-box-shadow:0 7px 7px rgba(19, 18, 18, 0.37);
+        box-shadow:0 7px 7px rgba(19, 18, 18, 0.37);
+    }
+    .contacts__info:hover .contacts__info-drop {
+        display: block;
+        position: absolute;
+        top: 5px;
+        height: 65px;
+    }
