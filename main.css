@@ -387,33 +387,30 @@ body {
     justify-content: center;
     width: 100%;
     align-items: center;
-    /* list-style-type: none; */
-    /* flex-wrap: wrap; */
+    height: 34px;
 }
 
 .pagination__list {
-    padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     list-style-type: none;
 }
 
-.pagination__info {
-    margin-right: 15px;
+.pagination__item {
+    width: 34px;
+    height: 34px;
 }
 
-
-
 .pagination__link {
-    height: 32px;
-    width: 32px;
+    height: 34px;
+    width: 34px;
     font-size: 16px;
+    line-height: 34px;
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    /* list-style-type: none; */
+    list-style-type: none;
 }
 
 .about-us__content {
@@ -436,47 +433,11 @@ body {
     margin-top: 0px;
 }
 
-.pagination__item--active {
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    background: #FFF;
-    /* list-style-type: none; */
-}
 
-.pagination__item {
-    width: 31px;
-}
 
-.pagination__link--active {
-    color: #F5170E;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.pagination--light a {
-    color: #000;
-}
 
-.pagination--light .pagination__info {
-    color: #000;
-}
 
-.pagination--light .pagination__item--active {
-    border-radius: 50%;
-    width: 34px;
-    background: #F5170E;
-}
-
-.pagination--light .pagination__item--active a {
-    color: #FFF;
-}
-
-.pagination--light {
-    margin-bottom: 95px;
-    margin-top: 65px;
-}
 
 
 .about-us {
@@ -985,7 +946,7 @@ body {
 
 .comment {
     background-color: #F4F5F5;
-    height: 799px;
+    /* height: 799px; */
 }
 
 .comment__title {
@@ -995,7 +956,7 @@ body {
     line-height: 65px;
     margin: 0 auto;
     padding-top: 50;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 
@@ -1288,4 +1249,96 @@ border: 1px solid #F5170E;
 
         /* animation interactive */
 
-       
+        .menu a {
+            position: relative;
+            color: #fff; 
+            cursor: pointer;
+            line-height: 1; 
+            text-decoration: none; 
+        
+        }
+        .menu a:after {
+            display: block;
+            position: absolute;
+            left: 0; /
+            width: 0;
+            height: 2px; 
+            background-color: #fff; 
+            content: "";
+            transition: width 0.3s ease-out; 
+        }
+        
+        .menu a:hover:after,
+        .menu a:focus:after {
+            width: 100%; 
+        }
+
+        
+        .pagination a {
+            color: #fff;
+            float: left;
+            text-decoration: none;
+        }
+        
+        .pagination a.active {
+            background-color: #fff;
+            color: white;
+            border-radius: 50px;
+        }
+        
+        .pagination a:hover:not(.active) {
+            background-color: #ffffff;
+            border-radius: 50%;
+            color: #F5170E;
+        }
+
+        .paginations {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            height: 34px;
+            color: #000000;
+            margin-bottom: 55px;
+        }
+        
+        .paginations__list {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+        }
+        
+        .paginations__item {
+            width: 34px;
+            height: 34px;
+        }
+        
+        .paginations__link {
+            height: 34px;
+            width: 34px;
+            font-size: 16px;
+            line-height: 34px;
+            text-decoration: none;
+            font-weight: bold;
+            list-style-type: none;
+        }
+
+        .paginations a {
+            color: #000000;
+            float: left;
+            text-decoration: none;
+        }
+        
+        .paginations a.active {
+            background-color: #F5170E;
+            color: #fff;
+            border-radius: 50px;
+        }
+        
+        .paginations a:hover:not(.active) {
+            background-color: #F5170E;
+            border-radius: 50%;
+            color: #fff;
+        }
