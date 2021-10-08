@@ -470,24 +470,6 @@ body {
     /* position: relative; */
 }
 
-.logo__footer {}
-
-.logo__footer,
-.menu-footer,
-.menu-footer__item,
-.socials__item,
-.contacts-footer {
-    /* display: inline-block; */
-}
-
-.logo__footer,
-.menu-footer,
-.menu-footer__item,
-.socials__item,
-.socials,
-.contacts-footer {
-    /* display: inline-block; */
-}
 
 .menu-footer__link {
     color: #FFF;
@@ -506,12 +488,6 @@ body {
     /* right: -11px; */
 }
 
-.socials {
-    /* right: 270px; */
-    /* position: absolute; */
-    /* top: -24px; */
-    /* margin-left: 75px; */
-}
 
 .menu-footer__item {
     margin-right: 54;
@@ -523,11 +499,35 @@ body {
 }
 
 .menu-footer {
-    /* position: absolute; */
-    /* left: 123px; */
-    /* bottom: 1; */
     margin-right: 84px;
 }
+
+.icon {
+    width: 42px;
+    height: 37px;
+    background: url(./img/css_sprites.png) no-repeat;
+  }
+  
+  .telegram .icon {
+    cursor: pointer;
+    background-position: -9px;
+  }
+  
+  .vk .icon {
+    cursor: pointer;
+    background-position: -63px;
+  }
+  
+  .f .icon {
+    cursor: pointer;
+    background-position: -117px;
+  }
+
+  .inst .icon {
+    cursor: pointer;
+    background-position: -171px;
+  }
+
 
 .socials__list .menu-footer__list {
     margin: 0;
